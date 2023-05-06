@@ -1,0 +1,5 @@
+
+
+This document covers different types of NoSQL databases such as key-value, wide-column, document, and graph databases.
+
+
