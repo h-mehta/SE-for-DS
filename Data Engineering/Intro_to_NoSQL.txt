@@ -2,4 +2,59 @@
 
 This document covers different types of NoSQL databases such as key-value, wide-column, document, and graph databases.
 
+NoSQL stands for Not-only-SQL and looks at ways of storing data other than the traditional method that is relational databases.
+
+
+
+		Advanatges of NoSQL over traditional method
+		-------------------------------------------
+
+
+* Big data - flexible schema
+
+* Scalable
+
+* Distributed -
+	Fault tolerant
+
+* High availability
+
+	
+
+			Properties of NoSQL
+			------------------
+
+* Elasticity : 
+	- Add or remove resources as needed
+
+* Sharding :
+	- Automatic partitioning to distribute the load
+	- Consistent Hashing
+
+* Asynchronous Replication :
+	- Store and forward approach
+
+* Horizontal scaling :
+	- Scaling out
+	- Commodity hardware
+
+
+BASE properties -
+---------------
+
+* Basically available
+* Soft state -
+	No mutual consistency gaurantees at a given time 
+	NoSQL does not gaurantee consistency like RDBMS does after a transaction is complete
+* Eventual consistency
+
+
+
+			Types of NoSQL databases
+			------------------------
+
+* Key - Value
+* Document
+* Wide Column(e.g. Apache Cassandra, Apache HBase, Google BigTable)
+* Graph	
 
