@@ -1,0 +1,93 @@
+
+MongoDB is a type of document DB.
+
+A document database (also known as a document-oriented database or a document store) is a database that stores information in documents.
+Instead of storing data in fixed rows and columns, document databases use flexible documents. 
+
+( Refer: https://www.mongodb.com/docs/manual/core/data-modeling-introduction/?_ga=2.208994842.908339707.1683613424-158453944.1683613423#flexible-schema )
+
+
+			How is MongoDB different from other types of databases?
+			------------------------------------------------------
+
+In a relational database, relationships between data in different tables can be achieved through joins, and within hierarchical databases, 
+relationships across nodes are impossible. MongoDB provides the ability to join documents through operations that match a variety of needs, 
+such as $lookup, as well as through references.
+
+
+
+				What is MongoDB
+				---------------
+
+
+* In MongoDB, rows (from RDBMS) are replaced by "document"
+	    & tables (from RDBMS) are replaced by "collections"
+
+* Data is stored in MongoDB in the form of BSON (binary form of JSON)
+
+* By using a document-oriented approach, hierarchial relationships can be
+ represented as single records.
+
+* MongoDB is schema-free: a document's keys are not predefined or fixed in any way.
+
+
+Equivalence in RDBMS and MongoDB:
+--------------------------------
+
+		RDBMS			MongoDB
+		-----			-------
+		Database	|       Database
+		Table, View	|	Collection
+		Row		|	Document ( JSON, BSON )
+		Column		| 	Field
+		Index		|	Index
+		Join		|	Embedded Document
+		Foreign Key	|	Reference
+		Partition	|	Shard	
+	
+
+Example:
+
+	{
+		"Title" : "The cukoo",
+		"Author" : "Robert",
+		"Genre" : "Crime novel",
+		"Detail" : {
+			"Publisher" : "Little brown",
+			"Language" : 2013,
+			"Pages" : 500
+			}
+		"Price" : [
+			{ 
+			    "type" : "Hardcover",
+			    "price" : 20
+			},
+			{   
+			    "type" : "electronic",
+			    "price" : 30
+			}
+			]
+	}
+
+
+
+Note that MongoDB is SCHEMA FREE
+		     -----------
+
+- There is no pre-defined data schema for Mongo DB
+- It is possible for each document to have different data!
+
+
+Example:
+
+	{
+		"name" : "Harshit",
+		"eyes" : black,
+		"hair" : blue
+	},
+	{
+		"name" : "Utkarsh",
+		"college" : "CMU"
+	}
+
+			

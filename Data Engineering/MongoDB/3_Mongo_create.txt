@@ -1,0 +1,24 @@
+
+ To create or use a database:
+
+	use <database_name>	
+
+	// switches to db <database_name>
+
+
+To create a new collection:
+
+	db .createCollection("sample")
+	|_|
+	 '------------------------------------> refers to current 
+						database
+
+
+To view the existing collections:
+
+	show collections
+
+To view the exisiting databases:
+
+	show dbs
+

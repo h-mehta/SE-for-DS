@@ -1,0 +1,75 @@
+
+This document contains a walk through for installing MongoDB locally on Mac - Intel processor
+
+1. Go to mongodb.com :
+
+	https://www.mongodb.com
+
+
+2. Since we want to install MongoDB locally : 
+
+   Products -> Community Edition -> Community server
+
+   ( Or directly go to : https://www.mongodb.com/try/download/community )
+
+
+3. Choose the platform and version & download.
+
+   I selected the Mac OS 4.4.21 version as 4.x versions are tested and stable
+
+
+4. Follow steps listed on MongoDB website:
+
+   Install MongoDB Community on macOS using .tgz Tarball
+
+   ( Refer : https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x-tarball/#install-mongodb-community-on-macos-using-.tgz-tarball )
+
+   Basically : 
+	* move binaries to /usr/local/bin/ folder, 
+	* create data folder to which MongoDB will write the data,
+	* create logs folder to which MongoDB will write the logs,
+	* set permissions for the data and log directories.
+
+
+5. Run MongoDB
+
+   To run MongoDB, run the mongod process at the system prompt, providing the two parameters dbpath and logpath from above, 
+   and the fork parameter to run mongod in the background.
+
+   	command: mongod --dbpath /usr/local/var/mongodb --logpath /usr/local/var/log/mongodb/mongo.log --fork
+
+
+6. If the step 5 fails, this might be because of permission issues. 
+
+	a. Navigate to the directory where the mongod executable file is located using the cd command. 
+
+	   For example, if the mongod executable file is located in the /usr/local/bin directory, navigate to it by entering the following command:
+
+		   cd /usr/local/bin
+
+	b. Once you are in the directory containing the mongod executable file, run the following command to bypass the security check and open mongod:
+
+       		   xattr -d com.apple.quarantine mongod
+
+		   xattr -d com.apple.quarantine mongo
+
+	   This will remove the quarantine attribute from the mongod executable file.
+
+	
+7. To check if mongodb is running:
+
+	Open the terminal and type the command:
+	
+		mongo --version
+
+	This should list the version of mongodb ( 4.4.21 )
+
+	Aletrnatively, 
+
+		ps aux | grep -v grep | grep mongod
+
+	This will show you a list of processes that contain the word "mongod". 
+	If MongoDB is running, you should see at least one process listed. 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------

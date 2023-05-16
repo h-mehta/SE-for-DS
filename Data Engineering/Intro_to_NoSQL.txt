@@ -58,3 +58,4 @@ BASE properties -
 * Wide Column(e.g. Apache Cassandra, Apache HBase, Google BigTable)
 * Graph	
 
+
