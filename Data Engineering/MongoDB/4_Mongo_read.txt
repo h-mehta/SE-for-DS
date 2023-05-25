@@ -1,0 +1,200 @@
+
+To show the list of databases:
+
+	show dbs
+
+To select a databse:
+
+	use <database_name>
+
+
+
+To show the list of collections:
+
+	show collections
+
+To use a particular collection:
+
+	use <collection_name>
+
+
+
+How do you read documents from a collection?
+
+	Equivalent of "select * from table" :
+
+		db.<collection_name>.find()
+
+	This returns all the documents inside the collection.
+
+	Note: 
+	
+	1. There is an extra attribute that gets returned - "_id".
+	   This "_id" is automatically created for every document that gets
+	   added to mongodb.
+
+	2. Formatting the output of find():
+
+		We can also write:
+
+			db.<collection_name>.find().pretty()
+
+		pretty() is used for formatting and making the output look
+		more clean. (Can be used for any Read operation in mongo)
+
+	
+
+	If you just want to have a look into what kind of data is stored
+	in the collection :
+
+		db.<collection_name>.findOne()
+
+		// Shows one document - can now understand the structure
+		// Idea is that rest of the documents might also be following
+		// the same structure if an application is inserting them
+
+
+How to know the count of documents :
+
+	db.<collection_name>.count()
+
+
+To check first 5 documents :
+
+	db.persons.find().limit(5).pretty()
+
+	Similar to " select * from table limit 2; "
+
+
+To skip documents:
+
+	db.<collection_name>.find().skip( n )
+
+	MongoDB will skip the first n documents and show the remaining documents
+
+
+Suppose you want to see only the 5th document :
+	
+	db.<collection_name>.find().skip(4).limit(1)
+
+
+
+------------------------- WHERE CLAUSE EQUIVALENT -------------------------------------------------------
+
+
+Let's say I want to select only the females from the persons database:
+
+	db.persons.find( {"gender":"F"} )
+
+	Equivalent of:
+
+		select * from persons p where p.gender = "F" ;
+
+
+
+Let's dive deeper into what is find() doing :
+
+	find( {<selection_conditions>} , {<desired_attributes>} )
+
+	For example if we only want to see names of female employees:
+
+		db.persons.find( {"gender":"F"} , {name:1} )
+
+		Equivalent of:
+		
+			select name from persons p where p.gender = "F";
+
+
+	But, mongoDB by default also shows the document ID of each record,
+	even though we never asked for the ID in <desired_attributes>
+
+	Thus we have to explicitly mention that we don't want to see the ID:
+
+		db.persons.find( {"gender":"F"} , {name:1, _id:0} )
+
+		// Attributes with 1 get shown and 0 get hidden
+ 
+		//  attributes not mentioned also stay hidden but for _id need
+		//  to specially tell MongoDB to hide it 
+
+
+	Let's write a bit more complex find query :
+
+	# Find names of people born before 1980
+
+		db.persons.find( {"yearOfBirth":{$lt:1980}}, {_id:0, name:1} )
+
+		// Equivalent of :
+
+		// 	select name from persons where yearOfBirth < 1980 ; 
+
+
+		// Other similar pre-defined operators in MongoDB :
+		// 	gt - greater than
+		// 	lte - less than equal to
+		// 	gte - greater than equal to
+		
+		//	for find() :
+		// 	$all
+		// 	$in
+		// 	$or
+		// 	$ne - not equal to 
+
+		// 	Many more ... 
+
+
+	The document has a structure like:
+		
+		{	.
+			.
+			"name" : { "first" : "Harshit" , "last" : "Mehta" },
+			"livesIn" : "Delhi",
+			"gender" : "M",
+			"countriesVisited" : ["India", "United States", 
+					      "UK", "Singapore"],
+			.
+		} 
+
+	# Let's say I want to see the first name only :
+		
+		A query like:
+
+			db.persons.find( {"gender":"M"} , {name:1, _id:0} )
+
+		Will output:
+
+			{"name" : {"first" : "Harshit", "last" : "Mehta"}}
+
+		But I want only the first name of male employees, so:
+		
+			db.persons.find({"gender":"M"},{"name.first":1, _id:0}) 
+
+
+	# Find all people who are living in Delhi or Mumbai
+
+		Method 1 ( Using $in operator ):
+		--------
+		db.persons.find( {"livesIn":{$in: ["Delhi","Mumbai"]}} )
+
+
+		Method 2 ( Using $or operator ):
+		--------
+		db.persons.find(
+
+			{					--
+			$or : [ {"livesIn":"Delhi"} , 		 |___ Need to
+				{"livesIn" : "Mumbai"} ]	 |    specify or
+			}					--    like a 
+								      JSON
+			) 					      
+
+	# Find all the persons who have visited India, United States or Singapore
+		db.persons.find( {"countriesVisited" : 
+				 {$all: ["India", "United States", "Singa"]}})
+
+		
+	# Find all people who are NOT living in Delhi
+
+		db.persons.find( {"livesIn" : {$ne : "Delhi"}} )
+
+
