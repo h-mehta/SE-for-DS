@@ -1,0 +1,233 @@
+
+
+Best reference for learning MLFLow:
+
+https://www.mlflow.org/docs/latest/tutorials-and-examples/tutorial.html
+
+
+-----------------------------------
+What is python_env.yaml needed for?
+-----------------------------------
+
+The `python_env.yaml` file specified on the MLflow tutorial webpage
+is used to define the Python environment for running the MLflow 
+tutorial code. It is an example of a YAML file that lists the 
+required Python packages and their versions needed to execute the 
+tutorial successfully.
+
+In the MLflow tutorial, the `python_env.yaml` file is used in 
+conjunction with the `mlflow run` command, which executes the code 
+in a reproducible and isolated environment based on the specified 
+package versions. This helps ensure that the code runs consistently
+ across different systems.
+
+The contents of the `python_env.yaml` file typically look like this:
+
+```yaml
+name: mlflow-tutorial
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - mlflow=1.20.0
+  - scikit-learn=0.24.2
+  - pandas=1.3.1
+  - matplotlib=3.4.2
+```
+
+Here's what the different sections mean:
+
+- `name`: Specifies the name of the environment.
+- `channels`: Lists the channels to search for packages. In this case, the `defaults` channel is used.
+- `dependencies`: Lists the required packages and their versions. In the example above, Python 3.7, MLflow 1.20.0, scikit-learn 0.24.2, pandas 1.3.1, and matplotlib 3.4.2 are required.
+
+When you run the MLflow tutorial code with the `mlflow run` command, 
+MLflow uses the `python_env.yaml` file to create a new conda 
+environment with the specified dependencies. 
+This ensures that the required packages and their versions are installed, allowing the code to run successfully.
+
+
+
+--------------------------
+what is conda environment?
+--------------------------
+
+
+A Conda environment is a self-contained and isolated environment 
+that contains a specific collection of packages and their 
+dependencies. 
+It is a tool provided by Conda, a popular package management and 
+environment management system, often used in Python and 
+data science workflows.
+
+With Conda environments, you can create separate environments for 
+different projects or applications, each with its own set of 
+packages and versions. This allows you to avoid conflicts between 
+packages and provides reproducibility by ensuring that the exact 
+package versions required for a project are installed.
+
+By providing the `python_env.yaml` file, the MLflow tutorial ensures
+ that users have the necessary dependencies installed and can 
+reproduce the tutorial code in a consistent and controlled environment.
+
+Running a project without a Conda environment would mean relying on 
+the system's default Python environment or any other existing 
+Python environment you have installed. 
+
+
+
+---------------------------------------------
+what does chanel in the python_env.yaml mean?
+---------------------------------------------
+
+In the `python_env.yaml` file, the `channels` section specifies the Conda channels to search for packages when creating the environment. Conda channels are repositories that contain packages and their versions for distribution and installation.
+
+Conda channels serve as sources for obtaining packages and dependencies. By specifying channels in the `python_env.yaml` file, you can control where Conda looks for the required packages and their versions. The channels listed in the `python_env.yaml` file determine the order in which Conda searches for packages during installation.
+
+Here's an example of the `channels` section in a `python_env.yaml` file:
+
+```yaml
+channels:
+  - defaults
+  - conda-forge
+```
+
+In this example, two channels are specified: `defaults` and `conda-forge`.
+
+- `defaults`: The `defaults` channel is the default Conda channel that provides a wide range of packages. When a package is requested, Conda first searches the `defaults` channel for the package and installs it if found.
+
+- `conda-forge`: The `conda-forge` channel is a community-driven channel that provides a comprehensive collection of open-source packages. It often includes packages that are not available in the `defaults` channel or offers alternative versions of packages.
+
+When creating the Conda environment using the `python_env.yaml` file, Conda will search the specified channels in the order listed. If a package is found in one of the channels, it will be installed. If a package is not found in any of the specified channels, Conda will raise an error.
+
+By specifying additional channels in the `python_env.yaml` file, you can broaden the search scope for packages, increase the chances of finding required packages, and customize the package sources for your project's environment.
+
+
+-------------------------------------------------------------------
+If python_env.yaml is taking care of the dependencies and specifies what packages need to be installed then why do we need the conda.yaml file?
+--------------------------------------------------------------------
+
+The python_env.yaml and conda.yaml files serve different purposes in managing dependencies and creating Conda environments:
+
+python_env.yaml: This file specifies the Python-specific dependencies required for the project, such as specific Python versions and Python packages. It focuses on the Python ecosystem and allows you to define the necessary packages and their versions. The python_env.yaml file is used with the mamba or conda command to create a Conda environment that includes the specified Python packages.
+
+conda.yaml: This file, also known as the environment.yaml file, is a more comprehensive configuration file that specifies the complete environment, including both Python and non-Python dependencies. It allows you to define packages from multiple ecosystems (e.g., Python, R, or C++) and specify versions for each package. The conda.yaml file is used to create a Conda environment using the conda env create command.
+
+In summary, while the python_env.yaml file focuses solely on Python dependencies, the conda.yaml file provides a more general and comprehensive approach to defining the entire environment, including dependencies from multiple ecosystems. The conda.yaml file allows you to specify non-Python dependencies and provides a unified way to manage all dependencies in a single file.
+
+In some cases, you may only need the python_env.yaml file if your project solely depends on Python packages. However, if your project requires dependencies from other ecosystems or if you prefer a more inclusive and centralized approach to manage all dependencies, the conda.yaml file is recommended. It offers greater flexibility and ensures that all required dependencies are captured within a single configuration file.
+
+------
+NOTE :
+------
+
+If you are defining the conda.yaml file, you can skip defining the python_env.yaml file. The conda.yaml file allows you to specify the complete environment, including both Python and non-Python dependencies, in a single configuration file.
+
+
+
+
+--------------------------------------------------------------------
+When i execute a command like "mlflow run sklearn_elasticnet_wine -P alpha=0.42" then what steps does the conda follow?
+--------------------------------------------------------------------
+
+When you execute the command `mlflow run sklearn_elasticnet_wine -P alpha=0.42`, MLflow and Conda follow a series of steps to create and execute the environment:
+
+1. Environment Creation: MLflow checks for the presence of a `conda.yaml` file in the specified project directory (`sklearn_elasticnet_wine`). If found, Conda uses this file to create the environment. If not found, it falls back to the `python_env.yaml` file or uses the default Python environment on your system.
+
+2. Conda Environment Setup: If a `conda.yaml` file exists, Conda uses it to create a new environment with the specified name (typically named after the project directory). The `conda.yaml` file defines the dependencies, including Python and non-Python packages, required for the project.
+
+3. Environment Activation: Once the environment is created, Conda activates it, ensuring that subsequent commands run within the created environment.
+
+4. Package Installation: Conda installs the required dependencies specified in the `conda.yaml` file. This includes installing the necessary Python packages, such as MLflow and scikit-learn, with their respective versions.
+
+5. Running the Project: After the environment is set up and dependencies are installed, MLflow executes the specified project (`sklearn_elasticnet_wine`). The project code runs within the created Conda environment, ensuring that the correct dependencies and versions are used during execution.
+
+6. Parameter Passing: The `-P` flag in the command (`-P alpha=0.42`) allows you to pass parameters to the executed project. In this case, the `alpha` parameter is set to `0.42`, which is accessible within the project code.
+
+By following these steps, MLflow and Conda create an isolated environment, install the necessary dependencies, and execute the project code with the specified parameters. This ensures reproducibility and consistency in the project's execution environment, making it easier to manage and reproduce experiments.
+
+
+
+
+
+--------------------------------------------------------------------
+What does it  mean to Run the Project? 
+How does the conda know where the code is located?
+--------------------------------------------------------------------
+
+
+
+"Running the Project" refers to executing the code within the MLflow project directory. MLflow uses the specified project directory (`sklearn_elasticnet_wine` in the example) as the context for running the project code.
+
+When you execute the command `mlflow run sklearn_elasticnet_wine -P alpha=0.42`, MLflow locates the project code based on the provided project directory. MLflow assumes that the project directory contains a project definition file (`MLproject`) that specifies the entry point and dependencies of the project.
+
+The `MLproject` file is a YAML file that provides information about the project, such as its name, entry point, and dependencies. It is located in the project directory, and MLflow uses it to understand how to run the project.
+
+Within the `MLproject` file, there is an `entry_points` section that specifies the available entry points of the project, along with their corresponding command and parameters. For example, in the `sklearn_elasticnet_wine` project, there might be an entry point called `main` that runs the main code.
+
+When you execute the `mlflow run` command, MLflow reads the `MLproject` file, finds the specified entry point (`main` in this case), and executes the corresponding code within the project directory. MLflow takes care of setting up the Conda environment and ensures that the project code runs within that environment.
+
+In summary, MLflow uses the `MLproject` file within the specified project directory to locate the project code, determine the entry points, and execute the code in the appropriate Conda environment.
+
+
+
+--------------------------------------------------------------------
+What if the MLProject file is not present?
+--------------------------------------------------------------------
+
+If the MLproject file is not present in the project directory, MLflow will not be able to locate the project code or determine the entry points and dependencies. In this case, executing the mlflow run command will result in an error.
+
+The MLproject file is a required file for MLflow projects. It serves as a project definition file that provides essential information about the project structure, dependencies, and entry points.
+
+
+
+--------------------------------------------------------------------
+More on MLPorject file:
+--------------------------------------------------------------------
+
+Yes, the `MLproject` file is indeed a YAML file. It follows the YAML syntax and provides a structured way to define the project configuration for MLflow.
+
+The crucial parameters that should be included in the `MLproject` file are as follows:
+
+1. `name` (required): Specifies the name of the MLflow project.
+
+2. `entry_points` (required): Defines the available entry points of the project, which represent the different tasks or scripts that can be executed within the project. Each entry point specifies a command and optional parameters. For example:
+
+   ```yaml
+   entry_points:
+     main:
+       command: "python main.py"
+       parameters:
+         param1: {type: float, default: 0.5}
+         param2: {type: int, default: 10}
+   ```
+
+   In the above example, the `main` entry point runs the `main.py` script using the command `python main.py`. It also defines two optional parameters, `param1` and `param2`, with their respective types and default values.
+
+3. `conda_env` (optional): Specifies the Conda environment used by the project. It can define the required packages and their versions. You can either specify the environment directly within the `MLproject` file or provide a separate `conda.yaml` file. For example:
+
+   ```yaml
+   conda_env: conda.yaml
+   ```
+
+   Alternatively, you can define the environment inline:
+
+   ```yaml
+   conda_env:
+     name: my-environment
+     channels:
+       - defaults
+     dependencies:
+       - python=3.8
+       - numpy=1.21.0
+       - pandas=1.3.0
+       - scikit-learn=0.24.2
+   ```
+
+These are the essential parameters that should be included in the `MLproject` file. However, you can also include additional parameters based on your project's requirements. These additional parameters might be specific to your project or workflow, and they can be accessed and utilized within the project code.
+
+By defining these parameters in the `MLproject` file, you provide a clear structure and configuration for your MLflow project, allowing for easy execution and management of different entry points with their associated parameters.
+
+
+
+
