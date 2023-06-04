@@ -1,0 +1,175 @@
+/*
+
+Part 1 of W2 & W3 Graded project :
+
+DB Systems Project
+
+Author : Harshit Mehta
+
+*/
+
+/* global use, db */
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Question 2
+
+const database = 'ProductOrder';
+const collection1 = 'Product';
+const collection2 = 'Inventory';
+const collection3 = 'User';
+const collection4 = 'Order';
+
+use(database); 
+
+// Create the new collections
+db.createCollection(collection1);
+db.createCollection(collection2);
+db.createCollection(collection3);
+db.createCollection(collection4);
+
+// Question 4
+// Display the first 5 rows of product, inventory, user, and order collection.
+
+const database = 'ProductOrder';
+use(database); 
+
+db.Product.find().limit(5).pretty();
+db.Inventory.find().limit(5).pretty();
+db.User.find().limit(5).pretty();
+db.Order.find().limit(5).pretty();
+
+
+// Question 5
+// Display the Unique Brand and Model names from the Product collection
+
+const database = 'ProductOrder';
+use(database); 
+
+db.Product.distinct("brand")
+db.Product.distinct("model")
+
+// Question 6
+// Find the maximum and minimum price of the given products.
+
+const database = 'ProductOrder';
+use(database); 
+
+// This is to get max price and minimum price from Product table
+
+db.Product.aggregate([
+    {
+      $group: {
+        _id: null,
+        maxPrice: { $max: "$price" },
+        minPrice: { $min: "$price" }
+      }
+    }
+  ])
+
+// Another way to find the maximum price product
+db.Product.find({},{_id:0, "brand":1, "price":1, "model":1}).sort({"price":-1}).limit(1);
+
+// Another way to find the minimum price product
+db.Product.find({},{_id:0, "brand":1, "price":1, "model":1}).sort({"price":1}).limit(1);
+
+
+// Question 7
+// Display the quantity and last_updated date and time for sku "SNY-11001". 
+
+const database = 'ProductOrder';
+use(database); 
+db.Inventory.find( { "sku" : {$in : ["SNY-11001"]}} , {_id:0, sku:1, quantity:1, last_updated:1} )
+
+
+// Question 8
+/* List down the count of the total number of users whose role is identified as
+'Supplier' from User collection */
+
+const database = 'ProductOrder';
+use(database); 
+//db.User.findOne()
+db.User.find( { "role" : "Customer"} ).count()
+
+// Question 9
+/* Display 'sku', 'code', 'price', 'brand' and 'warranty' information for the model
+'Bravia-X' */
+
+const database = 'ProductOrder';
+use(database); 
+db.Product.find( {"model":"Bravia-X"} , {_id:0, sku:1, code:1, price:1, brand:1, warranty:1} )
+
+// Question 10
+/*
+Find all the information of Sony products which have an Price greater
+than 1 lakh
+*/
+
+const database = 'ProductOrder';
+use(database); 
+db.Product.find( {"brand":"Sony", "price": {$gt : 100000}} ).pretty()
+
+// Question 11
+/*
+Find the total no of products by each Brand and sort them in descending order. 
+*/
+const database = 'ProductOrder';
+use(database); 
+db.Product.aggregate([
+    {
+      $group: {
+        _id: "$brand",
+        quantity: { $sum : 1 } 
+      },
+    },
+    {
+      $sort : { 
+        quantity : -1
+      }
+    }
+  ])
+
+  // for ascending order:
+  const database = 'ProductOrder';
+  use(database); 
+  db.Product.aggregate([
+      {
+        $group: {
+          _id: "$brand",
+          quantity: { $sum : 1 } 
+        },
+      },
+      {
+        $sort : { 
+          quantity : 1
+        }
+      }
+    ])
+  
+
+// Question 12
+/*
+Find the total no of users by each role, sort them is descending order and save the results 
+in the temporary collection
+*/
+
+const database = 'ProductOrder';
+use(database); 
+db.User.aggregate([
+    {
+      $group: {
+        _id: "$role",
+        quantity: { $sum : 1 } 
+      },
+    },
+    {
+      $sort : { 
+        quantity : -1
+      }
+    },
+    {
+      $out: "temporaryCollection"
+    }
+  ])
+
+db.temporaryCollection.find().pretty();
