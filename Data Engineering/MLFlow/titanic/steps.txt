@@ -17,3 +17,11 @@ Steps followed :
 		conda --version
 
 3. Setup MLFlow server (Instructions in other file) 
+
+4. After specifying the various hyperparamter combinations in bash script file, Save the file with a .sh extension, such as 'grid_search.sh'.
+
+5. Set the file as executable using the chmod command. Run the following command in the terminal:
+chmod +x grid_search.sh
+
+6. Now execute the script by running ./script.sh in the terminal. This will run the model code for
+All the combinations of hyper parameters.
