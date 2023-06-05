@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/c9699e073e68406faf5c0b97c2f3fa50/artifacts
+end_time: 1685964074347
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c9699e073e68406faf5c0b97c2f3fa50
+run_name: bald-fish-298
+run_uuid: c9699e073e68406faf5c0b97c2f3fa50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964074317
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/61b7068669e4429d930e41b31eab9353/artifacts
+end_time: 1685963920659
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 61b7068669e4429d930e41b31eab9353
+run_name: able-auk-51
+run_uuid: 61b7068669e4429d930e41b31eab9353
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963920631
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/62753f157daf4940b384bc19d10f600c/artifacts
+end_time: 1685964406409
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 62753f157daf4940b384bc19d10f600c
+run_name: gregarious-ape-649
+run_uuid: 62753f157daf4940b384bc19d10f600c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964406369
+status: 3
+tags: []
+user_id: harshit

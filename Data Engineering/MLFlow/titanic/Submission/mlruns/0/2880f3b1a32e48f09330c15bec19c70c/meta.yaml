@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/2880f3b1a32e48f09330c15bec19c70c/artifacts
+end_time: 1685964173902
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2880f3b1a32e48f09330c15bec19c70c
+run_name: sassy-horse-67
+run_uuid: 2880f3b1a32e48f09330c15bec19c70c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964173869
+status: 3
+tags: []
+user_id: harshit

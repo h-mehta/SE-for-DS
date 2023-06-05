@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/a3855221be984b2ba1f9de96278c4d4c/artifacts
+end_time: 1685963983581
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a3855221be984b2ba1f9de96278c4d4c
+run_name: serious-gnat-489
+run_uuid: a3855221be984b2ba1f9de96278c4d4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963983551
+status: 3
+tags: []
+user_id: harshit

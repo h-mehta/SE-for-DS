@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/1f1c567bc65641869bfdbd2a24e5c6a5/artifacts
+end_time: 1685963946151
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1f1c567bc65641869bfdbd2a24e5c6a5
+run_name: marvelous-bug-352
+run_uuid: 1f1c567bc65641869bfdbd2a24e5c6a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963946125
+status: 3
+tags: []
+user_id: harshit

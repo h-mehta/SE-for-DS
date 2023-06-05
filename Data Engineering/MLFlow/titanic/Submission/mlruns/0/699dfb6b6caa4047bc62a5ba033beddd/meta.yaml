@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/699dfb6b6caa4047bc62a5ba033beddd/artifacts
+end_time: 1685964033275
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 699dfb6b6caa4047bc62a5ba033beddd
+run_name: adaptable-fox-214
+run_uuid: 699dfb6b6caa4047bc62a5ba033beddd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964033246
+status: 3
+tags: []
+user_id: harshit

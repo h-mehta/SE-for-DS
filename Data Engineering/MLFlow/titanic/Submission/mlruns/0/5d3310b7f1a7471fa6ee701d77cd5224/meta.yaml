@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/5d3310b7f1a7471fa6ee701d77cd5224/artifacts
+end_time: 1685964146941
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5d3310b7f1a7471fa6ee701d77cd5224
+run_name: orderly-shrike-669
+run_uuid: 5d3310b7f1a7471fa6ee701d77cd5224
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964146907
+status: 3
+tags: []
+user_id: harshit

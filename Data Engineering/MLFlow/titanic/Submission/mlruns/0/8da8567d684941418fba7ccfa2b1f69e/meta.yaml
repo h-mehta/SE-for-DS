@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/8da8567d684941418fba7ccfa2b1f69e/artifacts
+end_time: 1685963934091
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8da8567d684941418fba7ccfa2b1f69e
+run_name: unruly-worm-698
+run_uuid: 8da8567d684941418fba7ccfa2b1f69e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963934065
+status: 3
+tags: []
+user_id: harshit

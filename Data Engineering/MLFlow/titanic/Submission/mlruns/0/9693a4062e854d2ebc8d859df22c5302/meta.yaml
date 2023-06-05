@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/9693a4062e854d2ebc8d859df22c5302/artifacts
+end_time: 1685964416103
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9693a4062e854d2ebc8d859df22c5302
+run_name: smiling-mare-102
+run_uuid: 9693a4062e854d2ebc8d859df22c5302
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964416060
+status: 3
+tags: []
+user_id: harshit

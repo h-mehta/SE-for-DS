@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/e21e20328f1243a69e9bb8f071800ce2/artifacts
+end_time: 1685964268988
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e21e20328f1243a69e9bb8f071800ce2
+run_name: incongruous-doe-325
+run_uuid: e21e20328f1243a69e9bb8f071800ce2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964268950
+status: 3
+tags: []
+user_id: harshit

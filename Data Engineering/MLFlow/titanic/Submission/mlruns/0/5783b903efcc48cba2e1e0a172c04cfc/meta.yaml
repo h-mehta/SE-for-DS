@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/5783b903efcc48cba2e1e0a172c04cfc/artifacts
+end_time: 1685956903901
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5783b903efcc48cba2e1e0a172c04cfc
+run_name: sincere-goat-8
+run_uuid: 5783b903efcc48cba2e1e0a172c04cfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685956903877
+status: 3
+tags: []
+user_id: harshit

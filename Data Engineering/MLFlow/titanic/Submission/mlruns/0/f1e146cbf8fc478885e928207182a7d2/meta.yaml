@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/f1e146cbf8fc478885e928207182a7d2/artifacts
+end_time: 1685964191360
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f1e146cbf8fc478885e928207182a7d2
+run_name: blushing-gnat-835
+run_uuid: f1e146cbf8fc478885e928207182a7d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964191328
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/7fdd1a6d6fd64d3a8add2f58fb70ff04/artifacts
+end_time: 1685964393141
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7fdd1a6d6fd64d3a8add2f58fb70ff04
+run_name: illustrious-dove-506
+run_uuid: 7fdd1a6d6fd64d3a8add2f58fb70ff04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964393101
+status: 3
+tags: []
+user_id: harshit

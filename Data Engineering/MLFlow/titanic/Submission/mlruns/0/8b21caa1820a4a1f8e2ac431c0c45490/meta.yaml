@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/8b21caa1820a4a1f8e2ac431c0c45490/artifacts
+deleted_time: 1685959399433
+end_time: 1685956425577
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 8b21caa1820a4a1f8e2ac431c0c45490
+run_name: abrasive-hare-700
+run_uuid: 8b21caa1820a4a1f8e2ac431c0c45490
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685956425551
+status: 3
+tags: []
+user_id: harshit

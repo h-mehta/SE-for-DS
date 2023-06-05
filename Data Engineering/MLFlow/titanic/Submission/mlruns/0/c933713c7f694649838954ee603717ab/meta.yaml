@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/c933713c7f694649838954ee603717ab/artifacts
+end_time: 1685963969022
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c933713c7f694649838954ee603717ab
+run_name: monumental-shoat-131
+run_uuid: c933713c7f694649838954ee603717ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963968995
+status: 3
+tags: []
+user_id: harshit

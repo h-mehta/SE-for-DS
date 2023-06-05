@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/52659d47bd9f4036a65c99f98d3d8891/artifacts
+end_time: 1685964070073
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 52659d47bd9f4036a65c99f98d3d8891
+run_name: popular-bass-467
+run_uuid: 52659d47bd9f4036a65c99f98d3d8891
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964070041
+status: 3
+tags: []
+user_id: harshit

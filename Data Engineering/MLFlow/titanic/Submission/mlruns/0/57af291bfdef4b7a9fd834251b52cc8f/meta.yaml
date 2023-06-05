@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/57af291bfdef4b7a9fd834251b52cc8f/artifacts
+end_time: 1685964029332
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57af291bfdef4b7a9fd834251b52cc8f
+run_name: righteous-moth-616
+run_uuid: 57af291bfdef4b7a9fd834251b52cc8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964029303
+status: 3
+tags: []
+user_id: harshit

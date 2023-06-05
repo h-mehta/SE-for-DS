@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/b7cec1200be642b494432a1b7cbe6262/artifacts
+end_time: 1685964296894
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b7cec1200be642b494432a1b7cbe6262
+run_name: crawling-wasp-862
+run_uuid: b7cec1200be642b494432a1b7cbe6262
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964296853
+status: 3
+tags: []
+user_id: harshit

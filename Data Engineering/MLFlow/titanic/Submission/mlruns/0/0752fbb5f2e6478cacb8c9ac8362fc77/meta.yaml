@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/0752fbb5f2e6478cacb8c9ac8362fc77/artifacts
+end_time: 1685964266137
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0752fbb5f2e6478cacb8c9ac8362fc77
+run_name: redolent-flea-363
+run_uuid: 0752fbb5f2e6478cacb8c9ac8362fc77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964266098
+status: 3
+tags: []
+user_id: harshit

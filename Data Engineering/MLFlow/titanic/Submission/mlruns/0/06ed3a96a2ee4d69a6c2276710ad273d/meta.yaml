@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/06ed3a96a2ee4d69a6c2276710ad273d/artifacts
+end_time: 1685964051408
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06ed3a96a2ee4d69a6c2276710ad273d
+run_name: trusting-ram-421
+run_uuid: 06ed3a96a2ee4d69a6c2276710ad273d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964051378
+status: 3
+tags: []
+user_id: harshit

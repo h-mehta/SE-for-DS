@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/ede0d0eadfcc40bb91993b892f50584d/artifacts
+end_time: 1685963961884
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ede0d0eadfcc40bb91993b892f50584d
+run_name: flawless-horse-739
+run_uuid: ede0d0eadfcc40bb91993b892f50584d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963961856
+status: 3
+tags: []
+user_id: harshit
