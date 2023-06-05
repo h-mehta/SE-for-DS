@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/edad27f032a643e68f0005b527d236b8/artifacts
+end_time: 1685964091540
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: edad27f032a643e68f0005b527d236b8
+run_name: auspicious-yak-527
+run_uuid: edad27f032a643e68f0005b527d236b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964091509
+status: 3
+tags: []
+user_id: harshit

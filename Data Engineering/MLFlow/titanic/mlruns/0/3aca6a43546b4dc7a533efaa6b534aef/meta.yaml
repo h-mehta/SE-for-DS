@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/3aca6a43546b4dc7a533efaa6b534aef/artifacts
+end_time: 1685963935807
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3aca6a43546b4dc7a533efaa6b534aef
+run_name: debonair-stork-201
+run_uuid: 3aca6a43546b4dc7a533efaa6b534aef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963935778
+status: 3
+tags: []
+user_id: harshit

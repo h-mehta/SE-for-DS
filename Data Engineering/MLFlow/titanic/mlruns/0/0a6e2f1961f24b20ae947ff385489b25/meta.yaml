@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/0a6e2f1961f24b20ae947ff385489b25/artifacts
+end_time: 1685964488459
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0a6e2f1961f24b20ae947ff385489b25
+run_name: persistent-stork-375
+run_uuid: 0a6e2f1961f24b20ae947ff385489b25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964488419
+status: 3
+tags: []
+user_id: harshit

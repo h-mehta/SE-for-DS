@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/1bc17fe7ca404766a3c9dbf01088266d/artifacts
+end_time: 1685963965430
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1bc17fe7ca404766a3c9dbf01088266d
+run_name: thundering-bee-598
+run_uuid: 1bc17fe7ca404766a3c9dbf01088266d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963965402
+status: 3
+tags: []
+user_id: harshit

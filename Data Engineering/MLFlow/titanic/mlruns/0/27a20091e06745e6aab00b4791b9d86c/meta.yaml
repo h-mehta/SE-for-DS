@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/27a20091e06745e6aab00b4791b9d86c/artifacts
+end_time: 1685964220407
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 27a20091e06745e6aab00b4791b9d86c
+run_name: aged-chimp-868
+run_uuid: 27a20091e06745e6aab00b4791b9d86c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964220380
+status: 3
+tags: []
+user_id: harshit

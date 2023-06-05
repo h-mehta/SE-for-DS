@@ -1,0 +1,19 @@
+
+
+Steps followed :
+
+1. Install MLflow and scikit-learn:
+
+	pip install mlflow
+	pip install scikit-learn
+
+
+2. Install conda:
+
+	Refer: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+	To check conda installation, run:
+
+		conda --version
+
+3. Setup MLFlow server (Instructions in other file) 

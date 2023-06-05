@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/9157c82897ac49dcba983d350b7b196d/artifacts
+end_time: 1685963963646
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9157c82897ac49dcba983d350b7b196d
+run_name: invincible-ant-142
+run_uuid: 9157c82897ac49dcba983d350b7b196d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963963618
+status: 3
+tags: []
+user_id: harshit

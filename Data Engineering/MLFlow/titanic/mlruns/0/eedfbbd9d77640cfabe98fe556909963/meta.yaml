@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/eedfbbd9d77640cfabe98fe556909963/artifacts
+end_time: 1685964084979
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eedfbbd9d77640cfabe98fe556909963
+run_name: powerful-hawk-90
+run_uuid: eedfbbd9d77640cfabe98fe556909963
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964084949
+status: 3
+tags: []
+user_id: harshit

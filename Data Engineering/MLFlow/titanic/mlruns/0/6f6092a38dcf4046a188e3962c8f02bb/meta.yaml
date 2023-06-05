@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/6f6092a38dcf4046a188e3962c8f02bb/artifacts
+end_time: 1685964080700
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6f6092a38dcf4046a188e3962c8f02bb
+run_name: enchanting-shrike-20
+run_uuid: 6f6092a38dcf4046a188e3962c8f02bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964080670
+status: 3
+tags: []
+user_id: harshit

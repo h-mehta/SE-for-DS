@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/5b0bb0450b3d494e87092bb5a7de3452/artifacts
+end_time: 1685956148516
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5b0bb0450b3d494e87092bb5a7de3452
+run_name: caring-shad-434
+run_uuid: 5b0bb0450b3d494e87092bb5a7de3452
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685956148491
+status: 3
+tags: []
+user_id: harshit

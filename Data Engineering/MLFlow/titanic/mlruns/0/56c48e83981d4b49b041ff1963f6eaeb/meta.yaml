@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/56c48e83981d4b49b041ff1963f6eaeb/artifacts
+end_time: 1685963992741
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56c48e83981d4b49b041ff1963f6eaeb
+run_name: powerful-whale-723
+run_uuid: 56c48e83981d4b49b041ff1963f6eaeb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963992713
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/3b6f6d5de0f24a849bf6b2eea02b7e5d/artifacts
+end_time: 1685963272541
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b6f6d5de0f24a849bf6b2eea02b7e5d
+run_name: chill-bee-591
+run_uuid: 3b6f6d5de0f24a849bf6b2eea02b7e5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963272513
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,117 @@
+
+
+After logging the information through mlflow.log_params() and mlflow.log_metrics(),
+
+MLFlow stores these logs (seperate log for each run) - by assigning every run a unique id
+
+these logs are stored in the directory called "mlruns"
+
+The "mlruns" directory gets created inside the directory where the code is running.
+
+MLFlow also provides a UI to visualise the logs ---->
+
+	To visualise these logs, type in the terminal ( navigate to the directory where mlruns is placed ):
+		
+		mlflow ui
+
+	
+	ERRORS I faced and how I resolved them:
+
+		On executing the "mlflow ui" command, the MLFlow server should start running and one can access the UI at:
+			
+			http://localhost:5000
+			OR
+			http://127.0.0.1:5000/
+
+	
+		However, I was getting a blank screen when I was accessing the "http://localhost:5000". This could be due to various reasons:
+
+			- Server not running
+			- Network or connectivity issues
+			- Check server logs : logs are usually stored in a file called mlflow_server.log or similar
+			- Resource limitations
+			- Update MLflow
+			- Restart MLflow server
+
+
+		First, I checked if the MLServer is running up typing in:
+			
+			```
+			mlflow server
+			```	
+
+			ERROR:
+				[ERROR] Can't connect to ('127.0.0.1', 5000)
+				Running the mlflow server failed. Please see the logs above for details.
+
+			This means some other process is running on port 5000 and hence I am not being to run MLFlow server.
+
+			RESOLUTION:
+
+				1. Stop the process using port 5000
+					
+					to get the PID of process running on port 5000:
+						lsof -i :5000
+
+					to get more detials about the process:
+						ps -p <PID>
+
+					On running the above, I understood Anaconda navigator is using port 5000
+					Did not want to kill that process so proceeded with specifying new port to run MLFlow server on.
+					
+
+				2. Specify a different port, e.g. 5001:
+					
+					mlflow server --port 5001
+
+					Also, if needed can kill the process running on port 5001 if needed:
+
+						a. Get the PID
+							lsof -i :5001
+ 
+						b. See if it is an important process:
+							ps -p <PID>
+
+						c. Kill the process forcefully:
+							kill 9 <PID>					
+		
+					After killing all the processes on port 5001, I started the MLFlow server with the following command:
+
+						mlflow server --port 5001
+
+					The UI can then be accessed through the following URL:
+	
+						http://localhost:5001
+		
+
+		However, after the above steps also I was getting Error in the logs, but now I knew MLFlow server is running properly. 				
+
+		On examining the logs closely, the following Error was throwing up:
+
+			TypeError: send_file() got an unexpected keyword argument 'max_age'
+
+		The TypeError: send_file() got an unexpected keyword argument 'max_age' error typically occurs when there is a version mismatch between 
+		the Flask library used by MLflow and the Flask library installed on the system.
+
+		To resolve this issue, try the following steps:
+
+			1. Check MLflow version:
+
+				mlflow --version
+
+			   Upgrade it if needed:				
+				
+				pip install --upgrade mlflow
+
+			2. Check Flask version:
+				
+				flask --version
+			
+			   Upgrade it if needed: 
+				
+				pip install --upgrade flask
+
+			3. Restart MLFlow server
+
+
+		After this when I ran, the "mlflow ui" command it directed me to "http://localhost:5001" and the UI started running!!!

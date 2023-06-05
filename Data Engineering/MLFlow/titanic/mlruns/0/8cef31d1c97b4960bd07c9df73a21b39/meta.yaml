@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/8cef31d1c97b4960bd07c9df73a21b39/artifacts
+end_time: 1685964037268
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8cef31d1c97b4960bd07c9df73a21b39
+run_name: amusing-fish-356
+run_uuid: 8cef31d1c97b4960bd07c9df73a21b39
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964037239
+status: 3
+tags: []
+user_id: harshit

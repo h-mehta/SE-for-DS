@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/f14b2ffc33114025bdb07131222e8f55/artifacts
+end_time: 1685963927328
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f14b2ffc33114025bdb07131222e8f55
+run_name: victorious-stork-936
+run_uuid: f14b2ffc33114025bdb07131222e8f55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963927303
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/e03a788a4e044705a5b325e64bd9cfda/artifacts
+end_time: 1685964303310
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e03a788a4e044705a5b325e64bd9cfda
+run_name: monumental-bass-755
+run_uuid: e03a788a4e044705a5b325e64bd9cfda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964303274
+status: 3
+tags: []
+user_id: harshit

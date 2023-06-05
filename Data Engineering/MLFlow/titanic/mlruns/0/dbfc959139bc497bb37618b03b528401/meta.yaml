@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/dbfc959139bc497bb37618b03b528401/artifacts
+end_time: 1685964451631
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dbfc959139bc497bb37618b03b528401
+run_name: debonair-ray-700
+run_uuid: dbfc959139bc497bb37618b03b528401
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964451591
+status: 3
+tags: []
+user_id: harshit

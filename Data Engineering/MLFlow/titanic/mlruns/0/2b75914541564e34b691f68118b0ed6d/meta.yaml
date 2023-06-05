@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/2b75914541564e34b691f68118b0ed6d/artifacts
+end_time: 1685964027323
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2b75914541564e34b691f68118b0ed6d
+run_name: unequaled-fly-867
+run_uuid: 2b75914541564e34b691f68118b0ed6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964027294
+status: 3
+tags: []
+user_id: harshit

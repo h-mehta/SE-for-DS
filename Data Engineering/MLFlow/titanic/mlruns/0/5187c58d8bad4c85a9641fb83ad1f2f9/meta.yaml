@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/5187c58d8bad4c85a9641fb83ad1f2f9/artifacts
+end_time: 1685964065898
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5187c58d8bad4c85a9641fb83ad1f2f9
+run_name: clean-goose-171
+run_uuid: 5187c58d8bad4c85a9641fb83ad1f2f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964065867
+status: 3
+tags: []
+user_id: harshit

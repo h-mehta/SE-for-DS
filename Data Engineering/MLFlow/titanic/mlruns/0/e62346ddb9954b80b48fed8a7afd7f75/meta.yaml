@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/e62346ddb9954b80b48fed8a7afd7f75/artifacts
+end_time: 1685963985380
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e62346ddb9954b80b48fed8a7afd7f75
+run_name: traveling-stoat-482
+run_uuid: e62346ddb9954b80b48fed8a7afd7f75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963985352
+status: 3
+tags: []
+user_id: harshit

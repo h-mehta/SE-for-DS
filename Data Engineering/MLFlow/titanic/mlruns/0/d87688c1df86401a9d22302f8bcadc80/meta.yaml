@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/d87688c1df86401a9d22302f8bcadc80/artifacts
+end_time: 1685963967268
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d87688c1df86401a9d22302f8bcadc80
+run_name: popular-moth-854
+run_uuid: d87688c1df86401a9d22302f8bcadc80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685963967240
+status: 3
+tags: []
+user_id: harshit

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harshit/Desktop/NYU/SE%20for%20DS/Github/Data%20Engineering/MLFlow/titanic/mlruns/0/cab38035a4814579866f5dacbe8d1ffb/artifacts
+end_time: 1685964057586
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cab38035a4814579866f5dacbe8d1ffb
+run_name: whimsical-kite-900
+run_uuid: cab38035a4814579866f5dacbe8d1ffb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685964057555
+status: 3
+tags: []
+user_id: harshit
