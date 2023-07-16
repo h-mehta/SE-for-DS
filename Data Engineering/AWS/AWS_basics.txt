@@ -1,0 +1,26 @@
+
+
+AWS
+---
+
+* Vitual machines - EC2
+
+* Amazon EC2 Auto Scaling helps you ensure that you have the correct
+number of Amazon EC2 instances avialbale to handle the load for your 
+application.
+
+* Elastic Load Balancing automatically distributes incoming traffic across
+multiple targets.
+
+* Amazon Single Storage Service (Amazon S3) is an object storage service
+that offers industry-leading scalability, data availability, security, 
+and performance. 
+
+
+On the AWS website:
+
+Select EC2 from the search and select launch an instance (this instance is
+a VM - we will be hosting our server here)
+
+Thus name the instance appropriatelt e.g. httpserver1 and choose the OS to
+be installed on the instance.
