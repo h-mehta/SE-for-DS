@@ -1,0 +1,85 @@
+
+Requests:
+
+We generally have to work with APIs to get the data. This is done using the Requests module
+
+--------------------------------------------------------------------------------------------
+PART 1: How to request data from external API using parameters
+--------------------------------------------------------------------------------------------
+
+# Import Requests
+import requests
+
+# Specify the API endpoint
+BASE_URL = "https://api.someapi.com/"
+
+# Query the data with GET 
+# GET will fetch data from the servers
+response = requests.get(f'{BASE_URL}/exetension')
+print(response.status_code)
+
+# there is a builtin JSON decoder, if dealing with JSON data
+all_data = response.json()
+
+# Access first record
+print(all_data[0])
+
+# If we want to fetch data with some filter criteria - use Query parameters
+
+# Fictional API endpoint and base URL
+base_url = "https://api.example.com"
+endpoint = "/data"
+
+# Example query parameters
+params = {
+    'param1': 'value1',
+    'param2': 'value2',
+    'param3': 'value3'
+}
+
+# Constructing the full URL with query parameters
+url = f"{base_url}{endpoint}"
+
+# Making the GET request with query parameters
+response = requests.get(url, params=params)
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Parse and work with the response data
+    data = response.json()
+    print(data)
+else:
+    # Print an error message if the request was unsuccessful
+    print(f"Error: {response.status_code} - {response.text}")
+
+'''
+Let's say I have a column in the data at the server as Price
+
+I want to fetch only that data where price is greater than 50 and less than 100 
+
+Use _gt to filter products with a price greater than 50
+Use _lt to filter products with a price less than 100
+'''
+
+base_url = "https://api.example.com"
+endpoint = "/products"
+
+# Using _gt to filter products with a price greater than 50
+params = {
+    'price_gt': 50
+    'price_lt': 100
+}
+
+url = f"{base_url}{endpoint}"
+
+response = requests.get(url, params=params)
+
+if response.status_code == 200:
+    data = response.json()
+    print(data)
+else:
+    print(f"Error: {response.status_code} - {response.text}")
+
+--------------------------------------------------------------------------------------------
+PART 2: How to send data to API 
+--------------------------------------------------------------------------------------------
