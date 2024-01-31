@@ -1,0 +1,33 @@
+                    Code
+                     |
+                     |                          .------> Env Variables
+                     v                          |
+                                                |------> Volumes
+    Registry <---  Image   ----> Container ---- |
+                     |           Name &         |
+                     |           ID             |-------> Ports
+                     |                          |
+                     V                          '-------> Networks
+                    Tag
+
+
+
+We have the "Code" with which we "build" an "image".
+
+An "image" is used to "create and run" a "container". 
+The same images can be used to spawn up multiple Containers each with a name and ID.
+Now each Container will have:
+- Env Variables: whatever is used by the Code
+- Volume: storage that needs to be allocated from local drives etc
+    (Once the container is deleted the data is gone except when you mount volumes to and share the data)
+- Ports
+- Networks
+
+The images can have multiple versions corresponding to the code version e.g. version 0, 1, 2, 3...
+Thus "tag" denotes the "version" of the "image".
+There is a special tag value called "latest" which corresponds to the latest version of the image
+
+Where are the Images stored?
+On a registry. The "images" can be "push/pull" from the "registry" 
+(Just like code is pushed to registry, image is pushed to the registry like dockerhub)
+
